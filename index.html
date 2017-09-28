@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>SINIIGA</title>
+<meta charset="utf-8"/>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+
+        <!--Edición de toda la estructura para el formulario 1-->
+<link rel="stylesheet" href="css/bootstrap.min1.css">
+     <!--Edición de toda la estructura para el formulario 2-->
+    <link rel="stylesheet" href="css/bootstrap.min2.css">
+    <!--Cuadros que redondean los formularios-->
+<link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+<body id="container-page-configAdmin">
+
+
+        <div class="container">
+            <div class="page-header">
+                <!--Encabezados con el nombre de SINIIGA-->
+              <h1>SINIIGA </h1>
+                <h2><small class="tittles-pages-logo">SISTEMA NACIONAL DE IDENTIFICACIÓN INDIVUDIAL DEL GANADO</small></h2>
+                <hr>
+              <h2><small class="tittles-pages-logo">CEDULA DE IDENTIDICACION ESPECIE (BOVINA, OVINA Y CAPRINA)</small></h2>
+            </div>
+            <!--Pestañas de navegación -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#Productos" role="tab" data-toggle="tab">Registro</a></li>
+              <li role="presentation"><a href="#Proveedores" role="tab" data-toggle="tab">Datos</a></li>
+            </ul>
+            <div class="tab-content">
+                <!--==============================Panel Registro-Formulario 1===============================-->
+                <div role="tabpanel" class="tab-pane fade in active" id="Productos">
+                <div class="row">
+                    <!--Espacio de los cuadros de los formularios-->
+                   <!-- <div class="col-xs-12 col-sm-6">-->
+                        <div class="col-xs-12">
+                      
+                        <br><br>
+                        <div id="add-product">
+                            <h2 class="text-primary text-center"><small><i class="fa fa-plus"></i></small>&nbsp;&nbsp;Registro</h2>
+                         <!--Inicia el primer formulario con los datos principales-->
+                            <form role="form" >
+                             
+                                
+                                
+                                  
+      <div class="form-group">
+      <label ><b>CLAVE DE UPP</b></label>
+      <input type="text" name="clave1" class="form-control"  placeholder="CLAVE DE UPP" required maxlength="30"  />
+    </div>
+                                
+              <div class="form-group">
+      <label><b>NOMBRE DEL PEDIDO</b></label>
+      <input type="text" name="nombre1" class="form-control" placeholder="NOMBRE DEL PEDIDO"  required maxlength="30"/>
+    </div>                  
+                                
+                           
+                                
+             
+         <div class="form-group">
+      <label><b>SERIE DEL</b></label>
+      <input type="text" name="serie" class="form-control" placeholder="SERIE DEL"  required />
+    </div>                   
+                                
+                                
+                                
+        
+         <div class="form-group">
+      <label><b>NOMBRE DEL PRODUCTOR </b></label>
+      <input type="text" name="productor" class="form-control" placeholder="NOMBRE DEL PRODUCTOR"  required />
+    </div>
+                       
+                                
+                                
+    
+        <div class="form-group">
+      <label ><b>NOMBRE DE TECNICO IDENTIFICADOR</b></label>
+      <input type="text" name="identificador" class="form-control" placeholder="NOMBRE DE TECNICO IDENTIFICADOR"  required />
+    </div>                            
+                                
+                                
+        <div class="form-group">
+      <label><b>AL</b></label>
+      <input type="text" name="al" class="form-control" placeholder="AL"  required />
+    </div>
+                     
+                                
+    <div class="form-group">
+      <label><b>TOTAL PAQUETES COMPLETOS</b></label>
+      <input type="number" name="paquetes" class="form-control"  placeholder="TOTAL PAQUETES COMPLETO"  required />
+    </div>
+                                
+              <div class="form-group">
+      <label><b>FECHA ARETADO</b></label>
+      <input type="date" name="fechaA" class="form-control" placeholder="FECHA ARETADO"  required />
+    </div>
+       
+
+                              <p class="text-center"><button type="submit" class="btn btn-primary">Registrar</button></p>
+                           
+                           
+ </form>
+            <!--Termina el primer formulario-->                        
+<p><strong>CANCELADO:</strong> Se cancelará el paquete completo en caso de que uno de los aretes se cierre involuntariamente. </p>
+    
+    <p><strong>SOBRANTE:</strong> Serán aquellos aretes que no se coloquen, devolviéndose a la ventanilla SINIIGA correspondiente  </p>
+                        </div>
+                    </div>
+                    
+               </div>
+                </div>
+                <!--==============================Panel Datos-Formulario 2===============================-->
+                <div role="tabpanel" class="tab-pane fade" id="Proveedores">
+                    <div class="row">
+                   
+                        
+                         <!--Espacio de los cuadros de los formularios-->
+                   <!-- <div class="col-xs-12 col-sm-6">-->
+                        <div class="col-xs-12">
+                      
+          
+                        <br><br>
+                        <div id="add-provee">
+                            <h2 class="text-primary text-center"><small><i class="fa fa-plus"></i></small>&nbsp;&nbsp;Datos</h2>
+                            <!--Inicia el segundo formulario con los datos principales-->
+   <form   role="form">
+                               
+     <label style="font-size: 14pt"><b>DATOS OBLIGATORIOS</b></label><br>
+    
+       <div class="form-group">
+      <label><b>No. SINIGA</b></label>
+      <input type="text" name="realname" class="control" placeholder="No. SINIGA"  required />
+    </div>
+       
+    
+   
+     <div class="form-group">
+      <label><b>ARETE CAMPAÑA</b></label>
+      <input type="text" name="campaña" class="control" placeholder="ARETE CAMPAÑA"  required />
+    </div>
+       
+      <div class="form-group">
+      <label><b>FECHA NACIMIENTO</b></label>
+      <input type="date" name="fecha" class="control" placeholder="FECHA NACIMIENTO"  required />
+    </div>
+      
+    
+    <div class="form-group">
+      <label><b>SEXO</b></label>
+    <form> 
+         <select id="select1" onChange="cambiarColor()" class="control"  required>
+  <option selected></option>
+             <option value="Hembra">H</option>
+    <option value="Macho">M</option>
+
+  </select>
+          
+            <!-- Valor recibido:<input type="text" id="text3" ><br> -->
+        </form>
+    </div>
+    
+    
+     <div class="form-group">
+      <label><b>RAZA</b></label>
+       <form>
+         <select id="select2" onChange="cambiar()" class="control"  required>
+   <option selected></option>
+             <option value="Pura">PURA</option>
+    <option value="Cruza">CRUZA</option>
+<option value="Criollo">CRIOLLO</option>
+  </select>
+        <!-- <br>  
+           Valor recibido:<input type="text" id="text6"><br>-->
+         </form>
+
+         
+         
+         
+    </div>
+     
+    
+     <div class="form-group">
+      <label><b>ESPECIFICAR RAZA/CRUZA</b></label>
+      <input type="text" name="raza" class="control" placeholder="ESPECIFICAR RAZA/CRUZA"  required />
+    </div>
+    
+
+      <label style="font-size: 14pt"><b>RAZA Ó No. SINIIGA</b></label><br>
+    
+       <div class="form-group">
+      <label><b>EMPADRE</b></label>
+ 
+     <form>
+  <select  name="EMPADRE" id="select3" onChange="nacimiento()" class="control">
+      <option selected></option>
+    <option value="Natural">MONTA NATURAL</option>
+    <option value="Artificial">INSEMINACION ARTIFICIAL</option>
+<option value="Hembrionaria">TRANSFERENCIA HEMBRIONARIA</option>
+  </select>
+<!--<br>
+  Valor asociado:<input type="text" id="text9"><br>-->
+</form>
+    
+    
+    </div>
+    
+    
+    
+     
+     <div class="form-group">
+      <label><b>PADRE</b></label>
+      <input type="text" name="padre" class="control" placeholder="PADRE"  />
+    </div>
+    
+     <div class="form-group">
+      <label><b>MADRE</b></label>
+  
+      <input type="text" name="madre" class="control" placeholder="MADRE"  />
+    </div>
+    
+  <p class="text-center"><button type="submit" class="btn btn-primary">Agregar</button></p>
+
+ </form>
+           <!--Termina el segundo formulario-->                               
+<p><strong>CANCELADO:</strong> Se cancelará el paquete completo en caso de que uno de los aretes se cierre involuntariamente. </p>
+    
+    <p><strong>SOBRANTE:</strong> Serán aquellos aretes que no se coloquen, devolviéndose a la ventanilla SINIIGA correspondiente  </p>
+                        </div>
+                    </div>
+                 
+     
+                        
+                        
+                        
+                        
+                      <!--Estructura de la tabla-->
+                    <div class="col-xs-12">
+                         <br>
+                        <!--Acomodar valores de tabla-->
+                        <div id="del-prod-form">
+                            <h2 class="text-danger text-center"><small><i class="fa fa-trash-o"></i></small>&nbsp;&nbsp;Ordenar por:</h2>
+                                                
+      <!--Ordenar-->
+
+    <form>
+        <!--Función de acomodar datos de tabla, estará modificado hasta conectarla con la base de datos-->
+    <p class="text-center">   <input type="radio" id="NmbA" class="sorts" name="radioTask1"> No. siniiga en orden ascendente
+               <!--Números en orden descendiente-->
+      <input type="radio" id="NmbD" class="sorts" name="radioTask1"> No. siniiga en orden descendiente
+        <!--Alfabéticamente en orden ascendente-->
+      <input type="radio" id="AlbA" class="sorts" name="radioTask1"> Ordenar alfabeticamente por raza en orden ascendente
+      <!--Alfabéticamente en orden descendiente-->
+        <input type="radio" id="AlbD" class="sorts" name="radioTask1"> Ordenar alfabeticamente por raza en orden descendente</p>
+    </form>
+
+    
+    
+  <p class="text-center"> <button class="btn btn-danger" onclick="sort()">Ordenar</button></p>
+    
+ 
+    
+    <div id="resultTask1"></div>
+    
+                         </div>
+                        <!--Fin de orden de datos de tabla-->
+                        <br>
+                        <!--Tabla-->
+                        <div class="panel panel-info">
+                            
+                            
+                            <div class="panel-heading text-center"><i class="fa fa-refresh fa-2x"></i><h3>Datos</h3></div>
+                          <div class="table-responsive">
+                               <table class="table table-bordered">
+                                  <thead class="">
+                                     <tr >
+                                      <th colspan="6" class="text-center" >DATOS OBLIGATORIOS</th>
+                                          <th colspan="1"></th>
+                                          <th colspan="2" class="text-center">RAZA Ó No. SINIIGA</th>
+                                      </tr>
+                                      <tr>
+                                          <th class="text-center">No. SINIIGA</th>
+                                          <th class="text-center">ARETE CAMPAÑA</th>
+                                          <th class="text-center">FECHA NACIMIENTO</th>
+                                          <th class="text-center">SEXO H/M</th>
+                                          <th class="text-center">RAZA</th>
+                                          <th class="text-center">ESPECIFICAR RAZA/CRUZA</th>
+                                          <th class="text-center">EMPADRE</th>
+                                          <th class="text-center">PADRE</th>
+                                          <th class="text-center">MADRE</th>
+
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                    <th class="text-center"></th>
+                                          <th class="text-center"></th>
+                                          <th class="text-center"></th>
+                                          <th class="text-center"></th>
+                                          <th class="text-center"></th>
+                                          <th class="text-center"></th>
+                                          <th class="text-center"></th>
+                                          <th class="text-center"></th>
+                                          <th class="text-center"></th>
+                                  </tbody>
+                              </table>
+                          </div>
+                        </div>
+                        <!--Fin tabla-->
+                    </div>
+                </div>
+                </div>
+               
+             
+                
+                
+            </div>
+        </div>
+
+    
+        
+    <script  src="js/index.js"></script>
+</body>
+</html>
